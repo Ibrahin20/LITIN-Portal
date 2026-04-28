@@ -1,0 +1,81 @@
+seccion informativa del litin
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h1 class="text-5xl font-extrabold text-blue-900 leading-tight tracking-tighter">
+                    Formando <span class="text-blue-500">Bachilleres</span> <br>
+                    <span class="text-red-600">Para el Nuevo Milenio</span>
+                </h1>
+                <p class="text-xl text-slate-600 leading-relaxed font-light italic border-l-4 border-red-600 pl-6">
+                    "Desde el año 1991 recibimos en nuestras aulas a jóvenes ávidos de querer desarrollarse de manera técnica y humana..."
+                </p>
+                <p class="text-slate-700 text-lg leading-relaxed">
+                    Basado en el exitoso <strong>Modelo Dual Alemán</strong>, el LITIN integra el aprendizaje académico con la práctica industrial real, preparando a nuestros estudiantes para los retos tecnológicos de hoy.
+                </p>
+                <div class="flex gap-4">
+                    <button class="bg-blue-700 hover:bg-blue-800 text-white px-8 py-3.5 rounded-xl font-bold transition shadow-lg shadow-blue-900/20">
+                        Nuestra Historia
+                    </button>
+                    <button class="bg-white border-2 border-slate-200 hover:border-red-600 text-slate-700 px-8 py-3.5 rounded-xl font-bold transition">
+                        Ver Pensum
+                    </button>
+                </div>
+            </div>
+
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-linear-to-r from-blue-600 to-red-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                <div class="relative bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-2xl">
+                    <div class="aspect-video bg-slate-100 flex items-center justify-center">
+                        <img src="{{ asset('images/foto-institucion.png') }}" alt="Instalaciones LITIN" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+//seccion de procesos de ingreso
+
+        <section class="space-y-12">
+            <div class="text-center space-y-4">
+                <h2 class="text-4xl font-black text-slate-800 uppercase tracking-tight">
+                    Disponemos de <span class="text-blue-700">3 niveles de ingreso</span>
+                </h2>
+                <div class="h-1.5 w-24 bg-red-600 mx-auto rounded-full"></div>
+                <p class="text-slate-500 max-w-3xl mx-auto text-lg leading-relaxed">
+                    Una educación de calidad para la formación de técnicos profesionales, basada en una preparación humanista, científica y tecnológica.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="flex flex-col transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="bg-amber-400 p-6 rounded-t-3xl border-x-8 border-t-8 border-amber-500 shadow-[10px_10px_0px_0px_rgba(251,191,36,0.2)]">
+                        <div class="bg-white rounded-2xl aspect-square flex items-center justify-center p-4">
+                            <img src="{{ asset('images/req-docs.png') }}" alt="Documentos" class="w-full h-full object-contain">
+                        </div>
+                    </div>
+                    <div class="bg-amber-400 rounded-b-3xl p-5 text-center border-x-8 border-b-8 border-amber-500 shadow-[10px_10px_0px_0px_rgba(251,191,36,0.2)]">
+                        <h3 class="text-2xl font-black text-amber-900 uppercase tracking-tighter italic">DOCUMENTACIÓN</h3>
+                    </div>
+                </div>
+
+                <div class="flex flex-col transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="bg-emerald-400 p-6 rounded-t-3xl border-x-8 border-t-8 border-emerald-500 shadow-[10px_10px_0px_0px_rgba(52,211,153,0.2)]">
+                        <div class="bg-white rounded-2xl aspect-square flex items-center justify-center p-4">
+                            <img src="{{ asset('images/req-eval.png') }}" alt="Evaluación" class="w-full h-full object-contain">
+                        </div>
+                    </div>
+                    <div class="bg-emerald-400 rounded-b-3xl p-5 text-center border-x-8 border-b-8 border-emerald-500 shadow-[10px_10px_0px_0px_rgba(52,211,153,0.2)]">
+                        <h3 class="text-2xl font-black text-emerald-900 uppercase tracking-tighter italic">EVALUACIÓN</h3>
+                    </div>
+                </div>
+
+                <div class="flex flex-col transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="bg-sky-400 p-6 rounded-t-3xl border-x-8 border-t-8 border-sky-500 shadow-[10px_10px_0px_0px_rgba(56,189,248,0.2)]">
+                        <div class="bg-white rounded-2xl aspect-square flex items-center justify-center p-4">
+                            <img src="{{ asset('images/req-adm.png') }}" alt="Admisión" class="w-full h-full object-contain">
+                        </div>
+                    </div>
+                    <div class="bg-sky-400 rounded-b-3xl p-5 text-center border-x-8 border-b-8 border-sky-500 shadow-[10px_10px_0px_0px_rgba(56,189,248,0.2)]">
+                        <h3 class="text-2xl font-black text-sky-900 uppercase tracking-tighter italic">ADMISIÓN</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
