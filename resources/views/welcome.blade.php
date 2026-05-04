@@ -2,11 +2,25 @@
     <div class="flex flex-col w-full min-h-screen">
         
         <section class="relative h-[65vh] md:h-[85vh] w-full overflow-hidden rounded-b-[3rem] md:rounded-b-[5rem] shadow-2xl bg-slate-900">
-            <div class="absolute inset-0 z-0">
-                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2070" 
-                     class="w-full h-full object-cover opacity-60" 
-                     alt="LITIN Talleres">
-                <div class="absolute inset-0 bg-linear-to-r from-slate-950 via-slate-900/40 to-transparent"></div>
+            <div class="absolute inset-0 z-0"
+                 x-data="{ 
+                    images: [
+                        '{{ asset('images/planta-fisica-1.jpg') }}',
+                        '{{ asset('images/taller-tecnico.jpg') }}',
+                        '{{ asset('images/laboratorio-tecnologico.jpg') }}',
+                        '{{ asset('images/planta-fisica-2.jpg') }}',
+                        '{{ asset('images/cultura-actividad.jpg') }}'
+                    ],
+                    active: 0
+                 }" 
+                 x-init="setInterval(() => active = (active + 1) % images.length, 5000)">
+                <template x-for="(image, index) in images" :key="index">
+                    <img :src="image" 
+                         class="absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out"
+                         :class="active === index ? 'opacity-70 z-0' : 'opacity-0 -z-10'"
+                         alt="LITIN Talleres">
+                </template>
+                <div class="absolute inset-0 bg-linear-to-r from-slate-950 via-slate-900/40 to-transparent pointer-events-none z-10"></div>
             </div>
 
             <div class="relative z-20 max-w-7xl mx-auto px-6 md:px-12 h-full flex items-center">
