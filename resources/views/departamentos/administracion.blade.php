@@ -1,5 +1,7 @@
 <x-layouts.app>
-    <div class="bg-slate-50 min-h-screen pt-20"> <section class="py-16 bg-slate-900 text-white rounded-b-[3rem] shadow-xl">
+    <div class="min-h-screen"> 
+        
+        <section class="py-20 bg-slate-900 text-white rounded-b-[3rem] shadow-xl">
             <div class="max-w-7xl mx-auto px-6 text-center">
                 <span class="inline-block py-1 px-3 rounded-full bg-blue-600/20 text-blue-400 text-[10px] font-black uppercase tracking-widest mb-4 border border-blue-500/30">
                     Atención al Representante
